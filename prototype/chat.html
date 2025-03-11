@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBuy - 智能购物助手</title>
+    <link rel="stylesheet" href="chat-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="chat-script.js" defer></script>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 侧边栏：聊天历史列表 -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="logo.svg" alt="SmartBuy Logo" width="40" height="40">
+                    <h1>SmartBuy</h1>
+                </div>
+                <button class="close-sidebar-btn" id="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索聊天记录...">
+            </div>
+            
+            <div class="chat-history-list">
+                <div class="chat-item active">
+                    <div class="chat-item-content">
+                        <h3>韩系春装搭配</h3>
+                        <p>韩系 春装 漂亮针织连衣裙 淑女 浅绿色 200元以内</p>
+                    </div>
+                    <span class="chat-time">今天</span>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-item-content">
+                        <h3>男士运动鞋推荐</h3>
+                        <p>有什么舒适的男士运动鞋推荐？预算300-500元</p>
+                    </div>
+                    <span class="chat-time">昨天</span>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-item-content">
+                        <h3>家用电器选购</h3>
+                        <p>想买一台性价比高的吸尘器，有什么推荐？</p>
+                    </div>
+                    <span class="chat-time">3天前</span>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-item-content">
+                        <h3>手机配件</h3>
+                        <p>iPhone 13 Pro Max 有什么好用的保护壳推荐？</p>
+                    </div>
+                    <span class="chat-time">上周</span>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-item-content">
+                        <h3>厨房用品</h3>
+                        <p>有什么实用的厨房小工具推荐？</p>
+                    </div>
+                    <span class="chat-time">2周前</span>
+                </div>
+            </div>
+            
+            <div class="new-chat-btn">
+                <button>
+                    <i class="fas fa-plus"></i> 新的购物咨询
+                </button>
+            </div>
+        </div>
+        
+        <!-- 主聊天区域 -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <button class="menu-btn" id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h2>韩系春装搭配</h2>
+                <div class="header-actions">
+                    <button class="action-btn">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message user-message">
+                    <div class="message-content">
+                        <p>韩系 春装 漂亮针织连衣裙 淑女 浅绿色 200元以内</p>
+                    </div>
+                    <span class="message-time">14:25</span>
+                </div>
+                
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>我找到了几款符合您要求的韩系春装针织连衣裙，都是浅绿色系，价格在200元以内：</p>
+                    </div>
+                    <span class="message-time">14:26</span>
+                </div>
+                
+                <div class="product-cards">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/150x200" alt="韩系针织连衣裙">
+                            <span class="product-price">¥189</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>韩版淑女针织连衣裙</h4>
+                            <p>2024春季新款 淡雅浅绿色 修身显瘦</p>
+                            <div class="product-meta">
+                                <span class="shop-name">优雅衣橱旗舰店</span>
+                                <span class="sales">月销2800+</span>
+                            </div>
+                            <button class="view-detail-btn">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/150x200" alt="韩系针织连衣裙">
+                            <span class="product-price">¥159</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>春季薄款针织连衣裙</h4>
+                            <p>韩国设计 淑女风 薄荷绿 舒适面料</p>
+                            <div class="product-meta">
+                                <span class="shop-name">首尔风尚店</span>
+                                <span class="sales">月销1500+</span>
+                            </div>
+                            <button class="view-detail-btn">查看详情</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/150x200" alt="韩系针织连衣裙">
+                            <span class="product-price">¥199</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>轻奢针织连衣裙</h4>
+                            <p>2024春夏新款 韩系淑女 浅绿色调 优雅气质</p>
+                            <div class="product-meta">
+                                <span class="shop-name">轻奢时尚馆</span>
+                                <span class="sales">月销980+</span>
+                            </div>
+                            <button class="view-detail-btn">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>这些连衣裙都符合您的要求，价格在200元以内，是韩系淑女风格的浅绿色针织连衣裙。您对哪一款更感兴趣？或者您还有其他的要求吗？</p>
+                    </div>
+                    <span class="message-time">14:26</span>
+                </div>
+                
+                <div class="message user-message">
+                    <div class="message-content">
+                        <p>第一款看起来不错，有没有更多图片可以看看？</p>
+                    </div>
+                    <span class="message-time">14:28</span>
+                </div>
+                
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>这是第一款韩版淑女针织连衣裙的更多图片：</p>
+                    </div>
+                    <span class="message-time">14:29</span>
+                </div>
+                
+                <div class="image-gallery">
+                    <img src="https://via.placeholder.com/120x160" alt="连衣裙图片1">
+                    <img src="https://via.placeholder.com/120x160" alt="连衣裙图片2">
+                    <img src="https://via.placeholder.com/120x160" alt="连衣裙图片3">
+                    <img src="https://via.placeholder.com/120x160" alt="连衣裙图片4">
+                </div>
+            </div>
+            
+            <div class="chat-input-area">
+                <div class="input-container">
+                    <button class="input-action-btn">
+                        <i class="fas fa-image"></i>
+                    </button>
+                    <input type="text" placeholder="描述您想要的商品..." id="message-input">
+                    <button class="input-action-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+                <button class="send-btn" id="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
