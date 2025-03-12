@@ -1,0 +1,18 @@
+在Xcode中安装iOS模拟器运行时的步骤：
+
+1. 打开Xcode应用程序
+2. 点击顶部菜单栏中的"Xcode" > "Settings..."（或按下Command + ,）
+3. 在设置窗口中，选择"Platforms"选项卡
+4. 在此页面上，您将看到可用的iOS模拟器版本
+5. 点击您想要安装的iOS版本旁边的下载按钮
+6. 等待下载和安装完成
+7. 安装完成后，关闭并重新打开Xcode
+
+或者，您也可以通过以下步骤安装：
+
+1. 打开Xcode应用程序
+2. 点击顶部菜单栏中的"Window" > "Devices and Simulators"
+3. 在弹出的窗口中，选择"Simulators"选项卡
+4. 点击左下角的"+"按钮创建新模拟器
+5. 如果"OS Version"下拉框为空，点击"Download more simulator runtimes..."
+6. 这将打开Xcode设置中的Platforms页面，然后按照上面的步骤4-7操作 

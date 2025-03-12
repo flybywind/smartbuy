@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "smartbuy",
+    "slug": "smartbuy",
+    "version": "1.0.0",
+    "sdkVersion": "50.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.anonymous.smartbuy.ios"
+    },
+    "android": {
+      "package": "com.anonymous.smartbuy.android"
+    }
+  }
+}

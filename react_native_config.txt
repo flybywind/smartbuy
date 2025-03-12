@@ -1,0 +1,25 @@
+在React Native/Expo项目中配置Android SDK路径：
+
+1. 在项目根目录创建 android/local.properties 文件：
+   
+   对于macOS：
+   sdk.dir=/Users/用户名/Library/Android/sdk
+   
+   对于Windows：
+   sdk.dir=C:\\Users\\用户名\\AppData\\Local\\Android\\Sdk
+   
+2. 或者在项目根目录创建 .env 文件（如果使用react-native-dotenv）：
+   
+   ANDROID_SDK_ROOT=/Users/用户名/Library/Android/sdk
+   
+3. 对于Expo项目，您可以在app.json中添加：
+   
+   "android": {
+     "config": {
+       "googleMaps": {
+         "apiKey": "YOUR_API_KEY"
+       }
+     }
+   }
+   
+注意：请将"用户名"替换为您的实际用户名 

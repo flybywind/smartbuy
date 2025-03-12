@@ -1,0 +1,1 @@
+请通过Xcode界面安装iOS模拟器运行时：Xcode > Settings > Platforms > 下载所需的iOS版本
