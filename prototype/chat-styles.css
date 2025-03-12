@@ -15,7 +15,7 @@
     --user-message-bg: #e3f2fd;
     --bot-message-bg: #f5f5f5;
     --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --sidebar-width: 320px;
+    --sidebar-width: 280px;
 }
 
 body {
@@ -23,6 +23,7 @@ body {
     color: var(--text-color);
     height: 100vh;
     overflow: hidden;
+    font-size: 14px;
 }
 
 .app-container {
@@ -43,7 +44,7 @@ body {
 }
 
 .sidebar-header {
-    padding: 15px;
+    padding: 12px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,56 +57,57 @@ body {
 }
 
 .logo img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
 }
 
 .logo h1 {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--primary-color);
 }
 
 .close-sidebar-btn {
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--light-text);
     cursor: pointer;
     display: none;
 }
 
 .search-box {
-    padding: 15px;
+    padding: 10px;
     position: relative;
 }
 
 .search-box i {
     position: absolute;
-    left: 25px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     color: var(--light-text);
+    font-size: 14px;
 }
 
 .search-box input {
     width: 100%;
-    padding: 10px 10px 10px 35px;
+    padding: 8px 8px 8px 30px;
     border: 1px solid var(--border-color);
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 16px;
+    font-size: 13px;
 }
 
 .chat-history-list {
     flex: 1;
     overflow-y: auto;
-    padding: 10px;
+    padding: 8px;
 }
 
 .chat-item {
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -121,39 +123,39 @@ body {
 }
 
 .chat-item-content h3 {
-    font-size: 15px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 4px;
     color: var(--text-color);
 }
 
 .chat-item-content p {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--light-text);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px;
+    max-width: 180px;
 }
 
 .chat-time {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--light-text);
     align-self: flex-start;
 }
 
 .new-chat-btn {
-    padding: 15px;
+    padding: 10px;
     border-top: 1px solid var(--border-color);
 }
 
 .new-chat-btn button {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -161,7 +163,7 @@ body {
 }
 
 .new-chat-btn button i {
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 /* 主聊天区域样式 */
@@ -173,7 +175,7 @@ body {
 }
 
 .chat-header {
-    padding: 15px;
+    padding: 12px 10px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
@@ -183,16 +185,16 @@ body {
 .menu-btn {
     background: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--light-text);
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 10px;
     display: none;
 }
 
 .chat-header h2 {
     flex: 1;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -203,24 +205,24 @@ body {
 .action-btn {
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--light-text);
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 12px;
 }
 
 .chat-messages {
     flex: 1;
-    padding: 20px;
+    padding: 15px 10px;
     overflow-y: auto;
     background-color: var(--bg-color);
 }
 
 .message {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 85%;
 }
 
 .user-message {
@@ -236,9 +238,9 @@ body {
 }
 
 .message-content {
-    padding: 12px 16px;
-    border-radius: 18px;
-    font-size: 15px;
+    padding: 10px 12px;
+    border-radius: 16px;
+    font-size: 14px;
     box-shadow: var(--card-shadow);
 }
 
@@ -254,31 +256,31 @@ body {
 }
 
 .message-time {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--light-text);
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 /* 产品卡片样式 */
 .product-cards {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin: 15px 0;
-    max-width: 90%;
+    gap: 12px;
+    margin: 12px 0;
+    max-width: 95%;
 }
 
 .product-card {
     display: flex;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--card-shadow);
 }
 
 .product-image {
     position: relative;
-    width: 120px;
+    width: 100px;
     flex-shrink: 0;
 }
 
@@ -294,44 +296,44 @@ body {
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 4px 8px;
-    font-size: 14px;
+    padding: 3px 6px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 .product-info {
-    padding: 12px;
+    padding: 10px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .product-info h4 {
-    font-size: 15px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 4px;
 }
 
 .product-info p {
-    font-size: 13px;
+    font-size: 12px;
     color: var(--light-text);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .product-meta {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 11px;
     color: var(--light-text);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .view-detail-btn {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 15px;
-    padding: 6px 12px;
-    font-size: 13px;
+    border-radius: 14px;
+    padding: 5px 10px;
+    font-size: 12px;
     cursor: pointer;
     align-self: flex-end;
     margin-top: auto;
@@ -340,21 +342,23 @@ body {
 /* 图片画廊样式 */
 .image-gallery {
     display: flex;
-    gap: 10px;
-    margin: 10px 0 20px;
+    gap: 8px;
+    margin: 8px 0 16px;
     overflow-x: auto;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 .image-gallery img {
-    border-radius: 8px;
+    width: 90px;
+    height: 120px;
+    border-radius: 6px;
     box-shadow: var(--card-shadow);
     cursor: pointer;
 }
 
 /* 聊天输入区域样式 */
 .chat-input-area {
-    padding: 15px;
+    padding: 10px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -366,25 +370,25 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--bg-color);
-    border-radius: 24px;
-    padding: 5px;
-    margin-right: 10px;
+    border-radius: 20px;
+    padding: 4px;
+    margin-right: 8px;
 }
 
 .input-action-btn {
     background: none;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--light-text);
     cursor: pointer;
-    padding: 8px;
+    padding: 6px;
 }
 
 .input-container input {
     flex: 1;
     border: none;
-    padding: 8px;
-    font-size: 15px;
+    padding: 6px;
+    font-size: 14px;
     background: none;
 }
 
@@ -397,15 +401,15 @@ body {
     color: white;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-/* 响应式设计 */
+/* 响应式设计 - 更新断点和样式 */
 @media (max-width: 768px) {
     .sidebar {
         position: absolute;
@@ -431,17 +435,64 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+/* 小屏幕手机适配 */
+@media (max-width: 375px) {
     .product-card {
         flex-direction: column;
     }
     
     .product-image {
         width: 100%;
-        height: 180px;
+        height: 160px;
     }
     
     .message {
         max-width: 90%;
+    }
+    
+    .chat-messages {
+        padding: 10px 8px;
+    }
+    
+    .image-gallery img {
+        width: 80px;
+        height: 110px;
+    }
+    
+    .chat-header h2 {
+        font-size: 15px;
+    }
+    
+    .action-btn {
+        margin-left: 8px;
+    }
+}
+
+/* 超小屏幕手机适配 */
+@media (max-width: 320px) {
+    .message {
+        max-width: 95%;
+    }
+    
+    .product-info h4 {
+        font-size: 13px;
+    }
+    
+    .product-info p {
+        font-size: 11px;
+    }
+    
+    .image-gallery img {
+        width: 70px;
+        height: 100px;
+    }
+    
+    .input-action-btn {
+        padding: 4px;
+    }
+    
+    .send-btn {
+        width: 32px;
+        height: 32px;
     }
 } 
